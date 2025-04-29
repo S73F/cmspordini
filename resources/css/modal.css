@@ -1,0 +1,21 @@
+.im-close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+
+.im-close-button:hover {
+    cursor: pointer;
+    color: #1976d2;
+}
+
+.im-modal-wrapper {
+    width: auto;
+    max-width: 90%;
+    padding: 2rem;
+}
+
+.im-modal-content {
+    padding: 3rem;
+}
