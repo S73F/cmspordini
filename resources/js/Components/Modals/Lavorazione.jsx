@@ -3,6 +3,7 @@ import { useLavorazione } from "../../Hooks/Components/Modals/useLavorazione";
 import { Button, Typography } from "@mui/material";
 import Tiptap from "../Tiptap";
 import { ActionModal } from "./ActionModal";
+import "../../../css/modal.css";
 
 /**
  * Componente per gestire la modale di modifica di una lavorazione.
