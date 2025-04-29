@@ -1,6 +1,7 @@
 import React, { useCallback, useRef } from "react";
 import { ActionModal } from "./ActionModal";
 import { useLavori } from "../../Hooks/Components/Tables/useLavori";
+import "../../../css/modal.css";
 
 /**
  * Componente per la gestione della presa in carico di un ordine.

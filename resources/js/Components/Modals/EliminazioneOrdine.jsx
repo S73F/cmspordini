@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useEliminazioneOrdine } from "../../Hooks/Components/Modals/useEliminazioneOrdine";
+import "../../../css/modal.css";
 import { ActionModal } from "./ActionModal";
 
 /**
