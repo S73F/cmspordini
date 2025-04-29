@@ -9,6 +9,7 @@ export default defineConfig({
                 "resources/css/app.css",
                 "resources/css/modal.css",
             ],
+
             refresh: true,
         }),
     ],
