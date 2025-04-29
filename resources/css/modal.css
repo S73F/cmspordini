@@ -1,21 +1,21 @@
-.im-close-button {
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    transition: color 0.2s;
+div>button.im-close-button {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 1.5rem !important;
+    transition: color 0.2 !important;
 }
 
-.im-close-button:hover {
-    cursor: pointer;
-    color: #1976d2;
+div>.im-close-button:hover {
+    cursor: pointer !important;
+    color: #1976d2 !important;
 }
 
-.im-modal-wrapper {
-    width: auto;
-    max-width: 90%;
-    padding: 2rem;
+div>div.im-modal-wrapper {
+    width: auto !important;
+    max-width: 90% !important;
+    padding: 2rem !important;
 }
 
-.im-modal-content {
-    padding: 3rem;
+.im-modal-wrapper>div.im-modal-content {
+    padding: 3rem !important;
 }
