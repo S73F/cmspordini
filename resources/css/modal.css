@@ -1,21 +1,21 @@
-div>button.im-close-button {
+div > button.im-close-button {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
     transition: color 0.2;
 }
 
-div>.im-close-button:hover {
+div > .im-close-button:hover {
     cursor: pointer;
-    color: #1976d2;
+    color: #00a55f;
 }
 
-div>div.im-modal-wrapper {
+div > div.im-modal-wrapper {
     width: auto;
     max-width: 90%;
     padding: 2rem;
 }
 
-.im-modal-wrapper>div.im-modal-content {
+.im-modal-wrapper > div.im-modal-content {
     padding: 3rem;
 }

@@ -14,7 +14,7 @@ export const formBtnStack = {
 };
 
 export const formFileReminder = {
-    border: "2px dashed #1976d2",
+    border: "2px dashed #00a55f",
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",

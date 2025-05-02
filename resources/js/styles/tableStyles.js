@@ -1,6 +1,6 @@
 export const dataTableStyle = {
     "& .headerColumn": {
-        bgcolor: "#1976d2",
+        bgcolor: "#00a55f",
         color: "#fff",
     },
     "& .MuiDataGrid-columnHeaderTitle": {
@@ -23,7 +23,7 @@ export const dataTableStyle = {
 
 export const iconStyle = {
     color: "inherit",
-    "&:hover": { color: "#1976d2" },
+    "&:hover": { color: "#00a55f" },
     mr: 1.5,
     transition: "color 0.2s ease",
 };
@@ -31,7 +31,7 @@ export const iconStyle = {
 export const anchorStyle = {
     color: "inherit",
     textDecoration: "none",
-    "&:hover": { color: "#1976d2 " },
+    "&:hover": { color: "#00a55f " },
     transition: "color 0.2s ease",
 };
 

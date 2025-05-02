@@ -12,8 +12,6 @@ import { Head, Link } from "@inertiajs/react";
 import { useState } from "react";
 import { useLayout } from "../Hooks/Layouts/useLayout";
 import { useActiveButton } from "../Contexts/ActiveButtonContext";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { itIT } from "@mui/material/locale";
 import {
     ClienteDrawerContent,
     OperatoreDrawerContent,
@@ -43,8 +41,6 @@ function Layout({ window, children, type }) {
 
     const { handleLogout } = useLayout(); // Recupera la funzione di logout dall'hook
 
-    const theme = createTheme(itIT);
-
     /**
      * Alterna l'apertura o chiusura del menu drawer su dispositivi mobili.
      */
@@ -56,7 +52,7 @@ function Layout({ window, children, type }) {
         window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <ThemeProvider theme={theme}>
+        <>
             <Head>
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
             </Head>
@@ -163,7 +159,7 @@ function Layout({ window, children, type }) {
                     <ToastContainer position="bottom-right" closeOnClick />
                 </Box>
             </Box>
-        </ThemeProvider>
+        </>
     );
 }
 

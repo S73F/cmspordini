@@ -7,6 +7,10 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { ActiveButtonProvider } from "./Contexts/ActiveButtonContext";
+import { createTheme, ThemeProvider } from "@mui/material";
+import { itIT } from "@mui/material/locale";
+
+const theme = createTheme({ palette: { primary: { main: "#00a55f" } } }, itIT);
 
 createInertiaApp({
     resolve: (name) => {
@@ -22,7 +26,11 @@ createInertiaApp({
     },
     setup({ el, App, props }) {
         createRoot(el).render(
-            <ActiveButtonProvider>{renderApp(App, props)}</ActiveButtonProvider>
+            <ThemeProvider theme={theme}>
+                <ActiveButtonProvider>
+                    {renderApp(App, props)}
+                </ActiveButtonProvider>
+            </ThemeProvider>
         );
     },
     progress: {
