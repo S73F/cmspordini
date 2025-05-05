@@ -14,13 +14,29 @@ import { Typography } from "@mui/material";
  *
  * @returns {JSX.Element} Un messaggio di benvenuto personalizzato per l'utente, basato sul nome o cognome.
  */
-const Welcome = ({ user }) => (
-    <Typography component="h2" color="primary" mb={4} fontSize={40}>
-        {user?.nome
-            ? `Benvenuto ${user?.nome}`
-            : `Benvenuto ${user?.cognome ?? "Utente"}`}
-    </Typography>
-);
+const Welcome = ({ user }) => {
+    // Recupera l'ora corrente per determinare il saluto appropriato
+    const hours = new Date().getHours();
+
+    let greeting;
+
+    if (hours < 12) {
+        greeting = "Buongiorno";
+    } else if (hours < 18) {
+        greeting = "Buon pomeriggio";
+    } else {
+        greeting = "Buonasera";
+    }
+
+    return (
+        <Typography component="h2" color="primary" mb={4} fontSize={40}>
+            {greeting},{" "}
+            {user?.nome || user?.cognome
+                ? user?.nome || user?.cognome
+                : "utente"}
+        </Typography>
+    );
+};
 
 /**
  * Componente che visualizza un messaggio di fallback personalizzato quando non ci sono elementi da mostrare per una determinata categoria
