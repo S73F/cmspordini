@@ -10,7 +10,7 @@ return new class extends Migration {
         Schema::create('ordini', function (Blueprint $table) {
             $table->id('IDordine');
             $table->foreignId('IDcliente')->constrained('clienti', 'IDcliente')->onDelete('restrict')->onUpdate('restrict');
-            $table->foreignId('IDoperatore')->nullable()->constrained('operatoricmsp', 'IDoperatore')->onDelete('restrict')->onUpdate('restrict');
+            $table->foreignId('IDoperatore')->nullable()->constrained('operatoriCMSP', 'IDoperatore')->onDelete('restrict')->onUpdate('restrict');
             $table->integer('numero');
             $table->dateTime('data');
             $table->string('medicoOrdinante', 50);

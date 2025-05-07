@@ -9,7 +9,7 @@ class Operatore extends Authenticatable
 {
     use HasFactory;
 
-    protected $table = "operatoricmsp";
+    protected $table = "operatoriCMSP";
 
     protected $primaryKey = "IDoperatore";
 

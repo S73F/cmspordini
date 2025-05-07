@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up()
     {
-        Schema::create('operatoricmsp', function (Blueprint $table) {
+        Schema::create('operatoriCMSP', function (Blueprint $table) {
             $table->id('IDoperatore');
             $table->string('nome', 50);
             $table->string('cognome', 50);
@@ -19,6 +19,6 @@ return new class extends Migration {
 
     public function down()
     {
-        Schema::dropIfExists('operatoricmsp');
+        Schema::dropIfExists('operatoriCMSP');
     }
 };
