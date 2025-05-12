@@ -32,10 +32,5 @@ class Cliente extends Authenticatable
         return $this->hasMany(Ordine::class, 'IDcliente');
     }
 
-    public function operatore()
-    {
-        return $this->belongsTo(User::class, 'IDoperatore');
-    }
-
     public $timestamps = false;
 }
