@@ -21,5 +21,10 @@ class Operatore extends Authenticatable
         'emailoperatore'
     ];
 
+    public function ordine()
+    {
+        return $this->hasMany(Ordine::class, 'IDoperatore');
+    }
+
     public $timestamps = false;
 }
