@@ -21,12 +21,16 @@ export const useOrdiniClienti = () => {
 
     useEffect(() => {
         if (clienteID) {
-            router.visit(`/operatore/ordini-clienti/${clienteID}`, {
-                only: ["ordini"],
-                preserveState: true,
-                preserveScroll: true,
-                replace: true,
-            });
+            router.get(
+                `/operatore/ordini-clienti/${clienteID}`,
+                {},
+                {
+                    only: ["ordini"],
+                    preserveState: true,
+                    preserveScroll: true,
+                    replace: true,
+                }
+            );
         }
     }, [clienteID]);
 

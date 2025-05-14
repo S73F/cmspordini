@@ -22,12 +22,16 @@ export const useStoricoOrdini = () => {
 
     useEffect(() => {
         if (tempo) {
-            router.visit(`/cliente/ordini/storico/${tempo}`, {
-                only: ["ordini"], // Ricarica solo la parte relativa agli ordini, ottimizzando la richiesta
-                preserveState: true,
-                preserveScroll: true,
-                replace: true,
-            });
+            router.get(
+                `/cliente/ordini/storico/${tempo}`,
+                {},
+                {
+                    only: ["ordini"], // Ricarica solo la parte relativa agli ordini, ottimizzando la richiesta
+                    preserveState: true,
+                    preserveScroll: true,
+                    replace: true,
+                }
+            );
         }
     }, [tempo]);
 

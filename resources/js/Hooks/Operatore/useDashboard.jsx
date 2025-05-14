@@ -18,19 +18,22 @@ export const useDashboard = () => {
      * @param {string} tipoLavori - Tipo di lavoro da visualizzare (ad esempio "nuovi", "in corso", ecc.)
      */
     const handleLavori = useCallback((tipoLavori) => {
-        router.visit(`/operatore/dashboard`, {
-            preserveScroll: true,
-            preserveState: true,
-            replace: true,
-            data: { tipo: tipoLavori }, // Passa il tipo di lavori come query string alla pagina
-            only: ["tipo", "lavori"], // Ricarica solo i dati necessari
-            onStart: () => {
-                setLoadingButton(tipoLavori);
-            },
-            onFinish: () => {
-                setLoadingButton(null);
-            },
-        });
+        router.get(
+            `/operatore/dashboard`,
+            { tipo: tipoLavori }, // Passa il tipo di lavori come query string alla pagina
+            {
+                preserveScroll: true,
+                preserveState: true,
+                replace: true,
+                only: ["tipo", "lavori"], // Ricarica solo i dati necessari
+                onStart: () => {
+                    setLoadingButton(tipoLavori);
+                },
+                onFinish: () => {
+                    setLoadingButton(null);
+                },
+            }
+        );
     }, []);
 
     return {
