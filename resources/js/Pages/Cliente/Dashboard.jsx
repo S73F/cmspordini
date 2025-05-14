@@ -18,7 +18,7 @@ export default function Dashboard({ user }) {
     return (
         <>
             <Head>
-                <title>Home - CMSPordini</title>
+                <title>Home - Ordini CMSP</title>
                 <meta
                     head-key="description"
                     name="description"

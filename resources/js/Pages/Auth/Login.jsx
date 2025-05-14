@@ -25,7 +25,7 @@ export default function Login() {
     return (
         <>
             <Head>
-                <title>Login - CMSPordini</title>
+                <title>Login - Ordini CMSP</title>
                 <meta
                     head-key="description"
                     name="description"

@@ -18,7 +18,7 @@ export default function GestioneClienti({ clienti }) {
     return (
         <>
             <Head>
-                <title>Gestione clienti - CMSPordini</title>
+                <title>Gestione clienti - Ordini CMSP</title>
                 <meta
                     head-key="description"
                     name="description"

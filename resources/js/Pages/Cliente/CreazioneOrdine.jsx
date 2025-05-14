@@ -45,7 +45,7 @@ export default function CreazioneOrdine({ InputLabelProps = {} }) {
     return (
         <>
             <Head>
-                <title>Creazione ordine - CMSPordini</title>
+                <title>Creazione ordine - Ordini CMSP</title>
                 <meta
                     head-key="description"
                     name="description"

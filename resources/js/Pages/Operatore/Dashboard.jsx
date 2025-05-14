@@ -32,7 +32,7 @@ export default function Dashboard({ user, tipo, lavori, numLavoriNuovi }) {
     return (
         <>
             <Head>
-                <title>Home - CMSPordini</title>
+                <title>Home - Ordini CMSP</title>
                 <meta
                     head-key="description"
                     name="description"

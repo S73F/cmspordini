@@ -24,7 +24,7 @@ export default function StoricoOrdini({ ordini }) {
     return (
         <>
             <Head>
-                <title>Storico ordini - CMSPordini</title>
+                <title>Storico ordini - Ordini CMSP</title>
                 <meta
                     head-key="description"
                     name="description"

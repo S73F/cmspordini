@@ -85,7 +85,7 @@ function Layout({ window, children, type }) {
                                 title="Logo CMSPordini"
                                 onClick={() => setActiveBtn("Home")}
                             >
-                                CMSPordini
+                                Ordini GruppoCMSP
                             </Link>
                         </Typography>
 

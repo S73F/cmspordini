@@ -54,7 +54,7 @@ export const DefaultDrawerContent = ({
                     title="Logo CMSPordini"
                     onClick={() => setActiveBtn("Home")}
                 >
-                    CMSPordini
+                    Ordini GruppoCMSP
                 </Link>
             </Typography>
 
